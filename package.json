@@ -1,0 +1,28 @@
+{
+  "name": "sov-sr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habibullin/sov-sr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/habibullin/sov-sr/issues"
+  },
+  "homepage": "https://github.com/habibullin/sov-sr#readme",
+  "devDependencies": {
+    "gulp-connect": "^5.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-minifier": "^0.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-slim": "^0.3.0",
+    "node-normalize-scss": "^3.0.0"
+  }
+}

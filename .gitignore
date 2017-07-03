@@ -1,0 +1,8 @@
+.DS_Store
+.bundle
+.publish/*
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+public/*
