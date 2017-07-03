@@ -37,8 +37,6 @@ gulp.task('slim', function(){
     .pipe(gulp.dest("./public"));
 });
 
-gulp.task('default', ['connect', 'watch', 'sass', 'slim']);
-
 
 //Minify
 var minify = require('gulp-minifier');
@@ -56,3 +54,23 @@ gulp.task('minify', function() {
     }
   })).pipe(gulp.dest('public/'));
 });
+
+
+//Concat
+var concat = require('gulp-concat');
+ 
+gulp.task('concat-scripts', function() {
+  return gulp.src(["./bower_components/jquery/dist/jquery.min.js", "./bower_components/bootstrap/dist/js/bootstrap.min.js", "./lib/*.js"])
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest('./public/dist/'));
+});
+
+gulp.task('concat-styles', function() {
+  return gulp.src(["./bower_components/bootstrap/dist/css/bootstrap.min.css"])
+    .pipe(concat('styles.css'))
+    .pipe(gulp.dest('./public/dist/'));
+});
+
+
+//Main task
+gulp.task('default', ['connect', 'watch', 'sass', 'slim', 'concat-scripts', 'concat-styles']);

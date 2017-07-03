@@ -2,26 +2,50 @@ doctype html
 html lang="ru"
   head
     title Slim Examples
+    link rel="stylesheet" href="dist/styles.css"
     link rel="stylesheet" href="css/style.css"
+  body data-spy="scroll" data-target="#navigation" data-offset="200"
 
-  body
-    .wrapper
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false"
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#" Логотип
+
+        .collapse.navbar-collapse id="navigation"
+          ul.nav.navbar-nav.navbar-right
+            li
+              a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in" О компании
+            li
+              a href="#services" data-toggle="collapse" data-target=".navbar-collapse.in" Продукты и услуги
+            li
+              a href="#clients" data-toggle="collapse" data-target=".navbar-collapse.in" Клиенты
+            li
+              a href="#contacts" data-toggle="collapse" data-target=".navbar-collapse.in" Контакты
     
-      .header
-        a href="#"
-          .logo
-          .name sov-sr
-        a href="/blog" Заметки
-        a href="mailto:hello@habibullin.com" hello@habibullin.com
+    section.hero
+      .container-fluid
+        .row
+          .col-xs-12
+            h1 СОВРЕМЕННЫЕ СИСТЕМЫ РЕФОРМИРОВАНИЯ
+            p разработка и внедрение практик будущего
 
-      .section
-        .hero fdg
+    section#about
+      h4 О компании
 
-        p.about Проектирую интерфейсы, cоздаю интерактивные прототипы, рисую и&nbsp;запускаю сайты
+      p Компания «Современные системы реформирования» создана в 2003 году и входит в группу компаний, объединенных под единым брендом Группа компаний «СОВРЕМЕННЫЕ ТЕХНОЛОГИИ».
 
-        #flexbox-container
-          #flex-block item 1
-          #flex-block item 2
-          #flex-block item 3
+      p Мы специализируемся на оказании предприятиям и организациям услуг в области технического регулирования, разработки и внедрения информационных решений, организационного проектирования и регламентации деятельности.
+    
+    section#services Services
 
-      .footer Footer
+    section#clients Clients
+
+    section#contacts Contacts
+
+    footer Footer
+
+    script src="dist/scripts.js"
