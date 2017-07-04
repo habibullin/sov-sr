@@ -1,11 +1,20 @@
 doctype html
 html lang="ru"
   head
-    title Slim Examples
+    title Современные системы реформирования
+    meta charset="UTF-8"
+    meta name="viewport" content="width=device-width"
+    meta name="theme-color" content="#ffffff"
     link rel="stylesheet" href="dist/styles.css"
     link rel="stylesheet" href="css/style.css"
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500&amp;subset=cyrillic"
+    link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"
+    link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"
+    link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"
+    link rel="manifest" href="/manifest.json"
+    link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"
+  
   body data-spy="scroll" data-target="#navigation" data-offset="200"
-
     nav.navbar.navbar-default.navbar-fixed-top
       .container-fluid
         .navbar-header
@@ -13,7 +22,7 @@ html lang="ru"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="#" Логотип
+          img.logo src="img/logo_black.png"
 
         .collapse.navbar-collapse id="navigation"
           ul.nav.navbar-nav.navbar-right
@@ -27,25 +36,168 @@ html lang="ru"
               a href="#contacts" data-toggle="collapse" data-target=".navbar-collapse.in" Контакты
     
     section.hero
-      .container-fluid
+      .container
         .row
-          .col-xs-12
+          .col-xs-12.col-lg-6
             h1 СОВРЕМЕННЫЕ СИСТЕМЫ РЕФОРМИРОВАНИЯ
-            p разработка и внедрение практик будущего
+        .row
+          .col-xs-12.col-sm-6
+            p.lead Разработка и&nbsp;внедрение практик будущего
 
     section#about
-      h4 О компании
+      .container
+        .row
+          .col-xs-12.col-lg-8
+            h2 О компании
 
-      p Компания «Современные системы реформирования» создана в 2003 году и входит в группу компаний, объединенных под единым брендом Группа компаний «СОВРЕМЕННЫЕ ТЕХНОЛОГИИ».
+            p Компания «Современные системы реформирования» создана в&nbsp;2003 году и&nbsp;входит в&nbsp;группу компаний, объединенных под единым брендом Группа компаний «СОВРЕМЕННЫЕ ТЕХНОЛОГИИ».
 
-      p Мы специализируемся на оказании предприятиям и организациям услуг в области технического регулирования, разработки и внедрения информационных решений, организационного проектирования и регламентации деятельности.
+            p Мы специализируемся на оказании предприятиям и&nbsp;организациям услуг в&nbsp;области технического регулирования, разработки и&nbsp;внедрения информационных решений, организационного проектирования и&nbsp;регламентации деятельности.
     
-    section#services Services
+    section#services.services
+      .container
+        .row
+          .col-xs-12
+            h2 Продукты и&nbsp;услуги
 
-    section#clients Clients
+        .row
+          .col-xs-12.col-md-6
+            h3 Разработка и внедрение информационных решений
+            ul
+              li Проектирование ИТ-архитектуры
+              li Проектирование и создание программного обеспечения бизнес-приложений
+              li Разработка технических проектов на&nbsp;внедрение информационных систем
+              li Функциональная и техническая интеграция информационных систем
+              li Проектирование и создание информационных ресурсов и&nbsp;коммуникационных площадок
+              li Подбор информационных решений под требования заказчика
 
-    section#contacts Contacts
+            ul.tags
+              li Электроэнергетика
+              li Машиностроение
+              li Инвестиции
+              li Нефтедобыча и нефтехимия
+              li СМИ
 
-    footer Footer
+          .col-xs-12.col-md-6
+            h3 Разработка и внедрение комплексных систем управления
+            ul
+              li Разработка систем финансового управления и бюджетирования
+              li Создание корпоративных структур и&nbsp;проектирование бизнес-процессов «с нуля»
+              li Стандартизация и&nbsp;техническое регулирование
+              li Разработка стратегий развития
+              li Реинжиниринг и&nbsp;оптимизация бизнес-процессов
+              li Разработка продуктовых стратегий
+
+            ul.tags
+              li Энергетика
+              li Инновации
+              li Муниципальное управление
+              li Институты развития
+
+        .row
+          .col-xs-12.col-md-6
+            h3 Управление производством
+            ul
+              li Классификация и паспортизация производственных активов
+              li Разработка технологических карт на мониторинг и ремонт оборудовани
+              li Оценка технического состояния и рисков отказа технологического оборудования
+              li Оценка качества ТОиР
+              li Методологическое сопровождение внедрения систем класса ЕАМ
+              li Разработка программных корпоративных документов
+
+            ul.tags
+              li Энергетика
+              li Металлургия
+              li Машиностроение
+
+          .col-xs-12.col-md-6
+            h3 Проектирование систем управления инновационной деятельностью
+            ul
+              li Анализ направлений инновационной деятельности предприятий
+              li Инвестиционная оценка направлений развития
+              li Проектирование системы  показателей эффективности инновационной деятельности
+              li Разработка программ инновационного развития
+
+            ul.tags
+              li Энергетика
+              li Инвестиции
+
+    section#clients.clients
+      .container
+        .row
+          .col-xs-12
+            h2 С нами работают
+            / Nav tabs
+            ul.nav.nav-pills role="tablist"
+              li.active role="presentation"
+                a href="#all" aria-controls="all" role="tab" data-toggle="tab" Все отрасли
+              li role="presentation"
+                a href="#energy" aria-controls="energy" role="tab" data-toggle="tab" Энергетика
+              li role="presentation"
+                a href="#chemistry" aria-controls="chemistry" role="tab" data-toggle="tab" Нефтедобыча и нефтехимия
+              li role="presentation"
+                a href="#government" aria-controls="government" role="tab" data-toggle="tab" Государственный сектор
+              li role="presentation"
+                a href="#investment" aria-controls="investment" role="tab" data-toggle="tab" Инвестиции
+
+            / Tab panes
+            .tab-content
+              .tab-pane.fade.in.active role="tabpanel" id="all"
+                ul.industries
+                  li ПАО «РусГидро»
+                  li ГК «Росатом»
+                  li ПАО «РОССЕТИ»
+                  li ООО «Газпром энергохолдинг» и&nbsp;генерирующие компании группы
+                  li ПАО «ИнтерРАО»
+                  li ОАО «Татэнергосбыт»
+                  li ОАО «Сетевая компания»
+                  li ОАО «Алтайэнергосбыт»
+                  li ПАО «Татнефть»
+                  li ООО «Татинтек»
+                  li ПАО «Лукойл»
+                  li ОАО «Казанский завод синтетического каучука»
+                  li ОЭЗ ППТ «Алабуга»
+                  li Агентство стратегических инициатив
+                  li ОАО «РОСНАНО»
+                  li ПАО «АК БАРС» БАНК
+              .tab-pane.fade role="tabpanel" id="energy"
+                ul.industries
+                  li ПАО «РусГидро»
+                  li ГК «Росатом»
+                  li ПАО «РОССЕТИ»
+                  li ООО «Газпром энергохолдинг» и&nbsp;генерирующие компании группы
+                  li ПАО «ИнтерРАО»
+                  li ОАО «Татэнергосбыт»
+                  li ОАО «Сетевая компания»
+                  li ОАО «Алтайэнергосбыт»
+              .tab-pane.fade role="tabpanel" id="chemistry"
+                ul.industries
+                  li ПАО «Татнефть»
+                  li ООО «Татинтек»
+                  li ПАО «Лукойл»
+                  li ОАО «Казанский завод синтетического каучука»
+
+              .tab-pane.fade role="tabpanel" id="government"
+                ul.industries
+                  li ОЭЗ ППТ «Алабуга»
+                  li Агентство стратегических инициатив
+
+              .tab-pane.fade role="tabpanel" id="investment"
+                ul.industries
+                  li ОАО «РОСНАНО»
+                  li ПАО «АК БАРС» БАНК
+
+    section#contacts.contacts
+      .container
+        .row
+          .col-xs-12
+            h2 Контакты
+        .row
+          .col-xs-12.col-md-3
+            p ООО «Современные Системы Реформирования»
+          .col-xs-12.col-md-9
+            p Адрес: 420022 Республика Татарстан, Казань, ул. Г. Камала, 41
+            p Телефон: (843) 293-53-58
+            p Электронная почта: info@sov-tech.ru
 
     script src="dist/scripts.js"
